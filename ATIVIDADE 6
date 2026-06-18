@@ -1,0 +1,93 @@
+EXERCICIO 1
+SELECT MIN(Quantity) AS 'Menor Numero'
+FROM OrderDetails
+
+
+EXERCICIO 2
+SELECT MAX(Quantity) AS 'Maior Numero'
+FROM OrderDetails
+
+EXERCICIO 3 
+SELECT MIN(OrderID) AS 'Menor Numero'
+FROM OrderDetails
+
+
+EXERCICIO 4
+SELECT MAX(OrderID) 
+FROM OrderDetails
+WHERE Quantity > 5
+
+
+EXERCICIO 5
+SELECT MIN(Quantity) 
+FROM OrderDetails
+WHERE ProductID = 3
+
+
+EXERCICIO 6
+SELECT MAX(OrderDetailID) 
+FROM OrderDetails
+WHERE Quantity < 10
+
+
+EXERCICIO 7
+SELECT MIN(ProductID) AS 'menor id de produto'
+FROM OrderDetails
+
+
+EXERCICIO 8
+SELECT MAX(Quantity) AS 'Maior Quantidade'
+FROM OrderDetails
+ORDER BY ProductID ASC
+
+
+EXERCICIO 9
+SELECT MIN(OrderID) AS 'Menor ordem de id'
+FROM OrderDetails
+ORDER BY Quantity DESC
+
+
+EXERCICIO 10
+SELECT MAX(Quantity) AS 'Maior quantidade'
+FROM OrderDetails
+ORDER BY ProductID NOT LIKE '%2%'
+
+
+EXERCICIO 11
+SELECT MIN(OrderDetailID) AS 'Menor valor'
+FROM OrderDetails
+ORDER BY OrderID
+
+
+EXERCICIO 12
+SELECT MIN(Quantity) AS 'Menor valor'
+FROM OrderDetails
+ORDER BY OrderID > 50
+
+
+EXERCICIO 13
+SELECT MAX(Quantity) AS 'Maior valor'
+FROM OrderDetails
+WHERE ProductID = 4
+ORDER BY OrderDetailID
+
+
+EXERCICIO 14
+SELECT MIN(OrderDetailID) AS 'Menor valor'
+FROM OrderDetails
+ORDER BY Quantity > 15
+
+
+EXERCICIO 15
+SELECT MAX(Quantity) AS 'Maior valor'
+FROM OrderDetails
+ORDER BY ProductID BETWEEN 5 AND 10
+
+
+EXERCICIO 16
+SELECT MIN(OrderID) AS 'Menor valor'
+FROM OrderDetails
+ORDER BY Quantity %5=0 OR Quantity %5=5
+
+
+
